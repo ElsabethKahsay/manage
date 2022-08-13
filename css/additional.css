@@ -1,0 +1,84 @@
+*{
+    scroll-behavior: smooth;
+}
+body{
+    background-image: url('/img/bg-tablet-pattern.svg');
+    background-repeat:no-repeat;
+    background-size: 800px;
+    background-position: 80% -10%;
+
+}
+
+#menu_list{
+    border: 1px solid red;
+    width: 100vw;
+    margin-left: -20px;
+}
+#hero{  
+    height:100vh;
+    }
+
+#hero_in{
+    margin-top: 10%;
+    width: 80%;
+   
+}    
+#second{
+    height: 100vh;
+    background-color: rgb(255, 246, 230);
+    
+}
+@media (max-width: 768px) { 
+    #second{
+        background-color: white;
+    }
+    body{
+        background: none;
+    }
+}
+
+.hamburger{
+    cursor:pointer;  
+    width:48px;
+    padding: 12px;
+    height: 40px;
+    transition: all 0.5s;
+     position: relative;
+}
+
+#btn .hamburger_top, #btn .hamburger_middle, #btn .hamburger_bottom{
+    width:24px;  
+    margin-top: 5px;
+    height:2px;
+    border:1px solid black;
+
+    transition: all 0.5s;
+}
+
+#btn .hamburger_middle{
+    transform: translateY(7px);
+    border:1px solid red;
+    display: none;
+}
+
+#btn .hamburger_bottom{
+    transform: translateY(14px);
+}
+
+#btn .open{
+    transform: rotate(90deg);
+    transform: translateY(0px);
+}
+
+.open .hamburger_middle{
+    display: none;
+}
+
+.open .hamburger_top{
+  transform: rotate(45deg) translateY(6px) translate(10px);
+}
+ .open .hamburger_bottom{
+    transform: rotate(-45deg) translateY(6px) translate(-2px);
+        border:1px solid red;
+  }
+  
