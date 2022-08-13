@@ -226,7 +226,7 @@
         <li class="hover:text-orange-500">Privacy Policy</li>
               </ul>
   </div>
-  <h2 class="hidden md:block"> Copy right reserved 2022</h2>
+  <h2 class="hidden md:block"> Copy right reserved 2022. Lisabeth K</h2>
 </div>
 
   <div class="flex flex-col items-center mt-5 justify-between">
@@ -246,10 +246,13 @@
   let btn=document.getElementById("btn")
   let list=document.getElementById("menu_list")
 
+   list.classList.toggle('hidden')
+    list.classList.toggle('flex') 
+    
   btn.addEventListener('click', ()=> {
-    btn.classList.toggle('open')
+    btn.classList.toggle('hidden')
+    list.classList.toggle('open')
     list.classList.toggle('flex')
-    list.classList.toggle('hidden')
   })
 </script>
 </body>
